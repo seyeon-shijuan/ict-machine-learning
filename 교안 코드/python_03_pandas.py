@@ -144,3 +144,5 @@ model.compile(loss='categorical_crossentropy', optimizer='adam',
 
 # 모델 실행
 history = model.fit(X, y, epochs=50, batch_size=5)
+
+
