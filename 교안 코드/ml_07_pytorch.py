@@ -78,6 +78,8 @@ dataset = DataLoader(tensor_dataset, batch_size=4, shuffle=True)
 
 
 for i, data in enumerate(dataset, 0):
-    print(i, end='')
+    print(i, end=' ')
     batch = data[0]
     print(batch.size())
+    
+
