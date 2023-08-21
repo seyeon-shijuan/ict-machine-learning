@@ -256,3 +256,11 @@ def eval_model(model, dataloaders, device):
 
 # 테스트 데이터를 평가 함수에 적용
 val_acc_hist = eval_model(resnet18, test_loader, device)
+
+
+
+preds = torch.randn(10,5).softmax(dim=-1)
+target = torch.randint(5, (10,))
+
+print(preds)
+print(target)
