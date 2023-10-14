@@ -17,7 +17,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('./data/wine.csv', header=None)
+df = pd.read_csv('data/wine.csv', header=None)
 X = df.iloc[:, 0:12]
 y = df.iloc[:, 12]
 

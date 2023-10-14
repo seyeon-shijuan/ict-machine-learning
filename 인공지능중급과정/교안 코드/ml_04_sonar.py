@@ -13,7 +13,7 @@ from tensorflow.keras.layers import Dense
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold
 
-df = pd.read_csv('./data/sonar3.csv', header=None)
+df = pd.read_csv('data/sonar3.csv', header=None)
 
 print(df.head())
 

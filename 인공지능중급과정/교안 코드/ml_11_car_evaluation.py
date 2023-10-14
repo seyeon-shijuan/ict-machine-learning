@@ -12,7 +12,7 @@ import seaborn as sns
 import torch
 from torch import nn
 
-dataset = pd.read_csv('./data/car_evaluation.csv')
+dataset = pd.read_csv('data/car_evaluation.csv')
 print(dataset.shape)
 print(dataset['output'].value_counts())
 

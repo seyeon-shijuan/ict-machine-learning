@@ -18,7 +18,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras.callbacks import EarlyStopping
 
 
-df = pd.read_csv('./data/house_train.csv')
+df = pd.read_csv('data/house_train.csv')
 
 d_types = df.dtypes
 

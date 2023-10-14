@@ -51,7 +51,7 @@ print(temp.view(1, -1)) # -1은 (1,?)의 ?를 자동 계산해서 처리
 print(temp.view(-1, 1))
 
 print('----------------')
-data = pd.read_csv('./data/class2.csv')
+data = pd.read_csv('data/class2.csv')
 
 x = torch.from_numpy(data['x'].values).unsqueeze(dim=1).float()
 y = torch.from_numpy(data['y'].values).unsqueeze(dim=1).float()
@@ -73,7 +73,7 @@ class CustomDataset(Dataset):
         return sample, label
     
 
-tensor_dataset = CustomDataset('./data/covtype.csv')
+tensor_dataset = CustomDataset('data/covtype.csv')
 dataset = DataLoader(tensor_dataset, batch_size=4, shuffle=True)
 
 

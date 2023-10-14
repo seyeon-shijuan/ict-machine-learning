@@ -15,7 +15,7 @@ from tensorflow.keras.layers import Dense
 
 # !git clone https://github.com/taehojo/data.git
 
-df = pd.read_csv('./data/pima-indians-diabetes3.csv')
+df = pd.read_csv('data/pima-indians-diabetes3.csv')
 
 head_df = df.head(5)
 val_df = df["diabetes"].value_counts()
@@ -88,7 +88,7 @@ quality : 0 ~ 10(높을 수록 좋은 품질)
 class :  와인종류(1:레드와인, 0:화이트와인)
 '''
 #와인 데이터 분석
-df = pd.read_csv('./data/wine.csv', delimiter=',', header=None)
+df = pd.read_csv('data/wine.csv', delimiter=',', header=None)
 #print(df.iloc[:, 12].value_counts())
 
 x = df.iloc[:, 0:12]
@@ -106,7 +106,7 @@ plt.legend()
 
 
 ###########################################
-df = pd.read_csv('./data/iris3.csv')
+df = pd.read_csv('data/iris3.csv')
 sns.pairplot(df, hue='species')
 plt.figure(figsize=(12, 12))
 plt.show()
